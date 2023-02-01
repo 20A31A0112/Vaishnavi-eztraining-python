@@ -1,0 +1,177 @@
+EXAMPLES FOR LIST :-
+
+L=[1,4,7.4,"SAM"]
+L
+[1, 4, 7.4, 'SAM']
+L[2]
+7.4
+L[2:]
+[7.4, 'SAM']
+L[0:]
+[1, 4, 7.4, 'SAM']
+L[2:1]
+[]
+L[2:4]
+[7.4, 'SAM']
+L[:2]
+[1, 4]
+L[-1]
+'SAM'
+L[-2]
+7.4
+L[::-1]
+['SAM', 7.4, 4, 1]
+
+EXAMPLES FOR FUNCTIONS OF LIST :-
+
+L=[1,4,1,1,6,4,1,2]
+len(L)
+8
+L.count(1)
+4
+L.append(400)
+
+L
+[1, 4, 1, 1, 6, 4, 1, 2, 400]
+L.extend([100,200,300])
+L
+[1, 4, 1, 1, 6, 4, 1, 2, 400, 100, 200, 300]
+L.remove(1)
+L
+[4, 1, 1, 6, 4, 1, 2, 400, 100, 200, 300]
+L.pop(-2)
+200
+L.pop(8)
+100
+L
+[4, 1, 1, 6, 4, 1, 2, 400, 300]
+L.sort()
+L
+[1, 1, 1, 2, 4, 4, 6, 300, 400]
+L.reverse()
+L
+[400, 300, 6, 4, 4, 2, 1, 1, 1]
+
+QUESTIONS :-
+1) Create a list with 10 elements, print the elements by one by one.
+Ans) 
+L=[1,2,3,4,5,6,7,8,9,0]
+for i in L:
+    print(i)
+o/p :-
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+
+2)After creating a list with 6 elements from the user extract only even numbers and print.
+Ans)
+size=int(input("size:"))
+L=[]
+for i in range(size):
+    ele=int(input("element:"))
+    L.append(ele)
+print(L)
+for j in L:
+    if j%2==0:
+        print(j)
+o/p :-
+size:6
+element:1
+element:2
+element:3
+element:4
+element:56
+element:7
+[1, 2, 3, 4, 56, 7]
+2
+4
+56
+
+3)Create a list with 5 float numbers and find and display,sum,avg,total of the list.
+
+Ans)
+l=list(map(float,input("enter numbers").split()))
+print(sum(l))
+print(sum(l)/len(l))
+
+o/p:-
+enter numbers3.4 4.0
+7.4
+3.7
+
+
+4) get list of numbers as input, return the product if the product is less than750. Else return the sum.
+Ans)
+l=list(map(int,input("enter numbers").split()))
+c=1
+for i in range(len(l)):
+    c=c*l[i]
+if c < 750:
+    print("product is :",c)
+else:
+    print("sum is :",sum(l))
+
+o/p:-
+enter numbers1 2 4 34
+product is : 272
+
+5)SET OPERATIONS EXAMPLES
+
+s={1,2,3,4}
+s
+{1, 2, 3, 4}
+s.add(5)
+s
+{1, 2, 3, 4, 5}
+s.discard(7)
+s
+{1, 2, 3, 4, 5}
+s.discard(4)
+s
+{1, 2, 3, 5}
+s.update([2,7,6])
+s
+{1, 2, 3, 5, 6, 7}
+s1={1,2,3}
+s2={1,2,3,4}
+s1.union(s2)
+{1, 2, 3, 4}
+s1.intersection(s2)
+{1, 2, 3}
+s1.difference(s2)
+set()
+s2.difference(s1)
+{4}
+s2.issuperset(s2)
+True
+s1.symmetric_difference(s2)
+{4}
+
+6)TUPLE OPERATIONS EXAMPLES:-
+
+t=(1,2,3,4)
+t.count(2)
+1
+t.index(3)
+2
+
+DICTIONARY EXAMPLES:
+
+a={1:"one",2:"two"}
+a
+{1:'one',2:'two'}
+type(a)
+<class 'dict'>
+a.keys()
+dict_keys([1,2])
+a.values()
+dict_values(['one','two'])
+a.items()
+dict_items([(1,'one'),(2,'two')])

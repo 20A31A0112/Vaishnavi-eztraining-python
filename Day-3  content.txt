@@ -1,0 +1,74 @@
+LIST[]:-
+     Python has an advanced array operation which is called as list. It is an ordered one and allows duplicates.
+
+FUNCTIONS OF LIST:-
+
+append()- Add an element to the end of the list - l.append(4)
+extend() - Add all elements of a list to the another list - l.extentd([5,6])
+insert() - insert an item at the defined index - l.insert(1,22)-1-index
+remove() - remove an element in the list - l.remove(22)
+pop() - removes and returns an element at the given index - l.pop(3)
+clear(0 - removes all items from the list - l.clear()
+index() - returns the index of the first matched item
+count() - returns the count of the number of items passed an an argument
+sort() - sort items in a list in ascending order
+reverse() - reverse the order of items in the list
+copy() - returns a shallow copy of the list
+
+LIST COMPREHENSION:-
+It offers a shorter syntax when you want to create a new list based on the values of an existing list.
+
+EXAMPLES:-
+1)
+L=["hyd","vizag","chennai","vijayawada"]
+city=[]
+for n in L:
+  if "v" in n:
+    city.append(n)
+print (city)
+
+o/p:-
+
+2)
+L1=2**x for x in range(2,10)]
+print(L1)
+
+o/p:-
+
+
+3)
+L2=[a for a in range(100,201,20)]
+print(L2)
+
+o/p:-
+
+
+4)L3=[1,2,3,4,5,6]
+L4=[i for in L3 if (i<5)]
+print(L2)
+
+
+SET OPERATIONS{}:-
+
+1)s.add(element)
+2)s.update([20,40])
+3)s.discard(elements)
+4)s.remove(element)......gets error is element not present
+5)s.union[(s1|s2)/(s1.union(s2))]
+6)s.intersection([s1&s2]/[s1.intersection(s2)])
+7)s.difference[(s1-s2)/(s1.difference(s2))]
+8)s.issuperset
+9)s.symmetric_difference([s1^s2]/[s1.symmetric_difference])
+
+TUPLE() :-
+in tuple operations elements will be in a order.
+1)t.count
+2)t.index
+
+DICTIONARY:-
+Dictionary contains elements with two units keys nad values. Keys should be unique.
+
+OPERATIONS FOR DICTIONARY:-
+1)items()
+2)keys()
+3)values()
