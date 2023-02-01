@@ -1,0 +1,40 @@
+PYTHON:-
+Python is famous in the market and it is also called as language of future. It supports current technologies and upcoming technologies. Python is a very sensitive language.
+
+MEDIUM:-
+Mediums consits of Idle, Jupiter, Note book, Thony, Anaconda, Ps code, etc. Python is a scripting language but not a programme. In python, there is no need for compile it only requires save
+ and run. Primitive data type is not required in python and it is a object oriented data type.
+Ex:-
+type(34)
+<class.'int'>
+
+DATA TYPE:-
+1)Text Type: str
+2)Numeric Types: int, float, complex
+3)Sequence Types: list, tuple, range
+4)Mapping Type:	dict
+5)Set Types: set, frozenset
+6)Boolean Type:	bool
+7)Binary Types:	bytes, bytearray, memoryview
+8)None Type: NoneType
+
+OPERATIONS PRECEDENCE AND ASSOCIATIVITY LAW :-
+ Every operator has its own priority. We can use botmass rule. If there is some priority operators present in the operation evaluation happens left to right except assignment operator which
+does from right to left.
+
+OPERATORS:-
+Python divides the operators in the following groups:
+
+1)Arithmetic operators
+2)Assignment operators
+3)Comparison operators
+4)Logical operators
+5)Identity operators
+6)Membership operators
+7)Bitwise operators
+
+MULTIPLE INPUTS IN SINGLE LINE:-
+ In C++/C user can take multiple inputs in one line using scanf but in Python user can take multiple values or inputs in one line by two methods. 
+
+Using split() method
+Using List comprehension

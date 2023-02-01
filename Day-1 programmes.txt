@@ -1,0 +1,84 @@
+DATA TYPE EXAMPLE:-
+n=2
+type(n)
+<class 'int'>
+
+OPERATORS EXAMPLE :-
+1)
+n1=2
+n2=2
+n=n1+n2
+print(n)
+4
+
+2)Change 3 intger, 3 float, 2 strings and 1 complex numbers as input and print the same on the screen.
+NOTE: Use formated note.
+Ans)
+x=(int(input("enter integer number")))
+y=(int(input("enter integer number")))
+z=(int(input("enter integer number")))
+print(x,y,z)
+a=(float(input("enter float number")))
+b=(float(input("enter float number")))
+c=(float(input("enter float number")))
+print(a,b,c)
+p=(str(input("enter string")))
+q=(str(input("enter string")))
+print(p,q)
+r=(complex(input("enter complex number")))
+print(r)
+
+o/p:-
+enter integer number3
+enter integer number4
+enter integer number5
+3 4 5
+enter float number1
+enter float number3.7
+enter float number1.9
+1.0 3.7 1.9
+enter stringhappy
+enter stringworld
+happy world
+enter complex number10-3i
+(10-3j)
+
+4)swapping of two numbers with temp values.
+Ans)
+num1=12
+num2=10
+print("BEFORE SWAPPING")
+print(num1)
+print(num2)
+temp=num1
+num1=num2
+num2=temp
+print("AFTER SWAPPING")
+print(num1)
+print(num2)
+
+o/p:-
+BEFORE SWAPPING
+12
+10
+AFTER SWAPPING
+10
+12
+
+
+5)Swapping of two numbers without temp values.
+Ans)
+m=10
+n=5
+print("BEFORE SWAPPING")
+print(m,n)
+m=m-n
+n=m+n
+print("AFTER SWAPPING")
+print(m,n)
+
+o/p:-
+BEFORE SWAPPING
+10 5
+AFTER SWAPPING
+5 10
