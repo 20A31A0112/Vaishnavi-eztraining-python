@@ -1,0 +1,71 @@
+BITWISE OPERATIONS :-
+0's and 1's
+some operations if you do like dz it will be faster.
+Like-compressing data.
+Sending data in network to network.
+0-1 or ON OFF or true false
+Types of bitwise operations are 
+1)Bitwise AND
+2)Bitwise OR
+3)Bitwise XOR (exclusive OR)
+5)Bitwise left shift
+6)Bitwise right shift
+9)Negation
+
+CONTROL/CONDITINAL STATEMENTS :-
+1)If
+2)If else
+3)Else if(elif)
+4)Else if ladder
+5)nestled if
+
+WHILE LOOP :-
+i=1
+while i<=20:
+     if i%2==0:
+         print(i)
+     i=i+1
+
+0/p:-
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+
+RANGE :-
+It is a sequence of numbers. Here "in" is mentioned as membership operator.
+examples:-
+a)
+for i in range (1,11):
+     print(i)
+o/p:-
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+b)
+for j in range (2,11,2):
+    print(j)
+o/p:-
+2
+4
+6
+8
+10
+12
+14
+16
+18
