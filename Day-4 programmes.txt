@@ -1,0 +1,114 @@
+1) DICTIONARY EXAMPLE :-
+a)
+d={n:n*n for n in range(1,5)}
+print(d)
+O/P:-
+{1: 1, 2: 4, 3: 9, 4: 16}
+
+b)
+#CALCULATING PRODUCT PRICE for 5 units
+old={'rice':60,'dhaal':120,'oil':150}
+new={product:price*5 for (product,price)in old.items()}
+print(new)
+o/p:-
+{'rice': 300, 'dhaal': 600, 'oil': 750}
+
+c)
+#WITH CHECKS
+real={'sam':24,'angel':18,'kumar':35}
+now={name:age for (name,age)in real.items() if age>20}
+print(now)
+o/p:-
+{'sam': 24, 'kumar': 35}
+
+2)Create a list with 8 customer names display a dictionary which has customer names along with dicount for them for a particular shop.
+import random
+cust=["nani","vaishnavi","bhanu","sanjana","navya","kusuma","suma","bhavani"]
+dis={names:random.randint(1,100) for names in cust}
+print(dis)
+o/p:-
+{'nani': 71, 'vaishnavi': 65, 'bhanu': 70, 'sanjana': 43, 'navya': 9, 'kusuma': 54, 'suma': 30, 'bhavani': 28}
+
+3)create 2 list with 5 students in 1st list and in 2nd list contains their total marks in their school and display them on screen.
+stu_nam=["hari","satya","suvarna","ramu","krishna"]
+marks=[449,420,450,409,479]
+d={a:b for (a,b) in zip (stu_nam,marks)}
+print(d)
+o/p:-
+{'hari': 449, 'satya': 420, 'suvarna': 450, 'ramu': 409, 'krishna': 479}
+
+3)Get one string as input along with one character find out and display wheter that particular character is peresent or not.
+Ans)
+s=input("enter a string")
+a=input("enter a character")
+c=0
+for i in s:
+    if i==a:
+        print("yes it is present in the given string")
+        c=1
+if c==0:
+    print("no")
+o/p:-
+enter a stringerror
+enter a characterv
+no
+
+4)After getting a string as a input check your string contains spaces or not if yes then count number of spaces in it and find it.
+ans)
+s=input("enter a string")
+c=0
+for i in s:
+    if i==" ":
+        c=c+1
+if c>0:
+    print("yes there is space",c)
+if c<0:
+    print("no")
+o/p:-
+enter a stringdevi vaishnavi
+yes there is space 1
+
+5)Check whether the given string is palindrome or not.
+Ans)
+s=input("enter a string")
+c=0
+if s==s[::-1]:
+    print("yes it is a palindrome")
+else:
+    print("no")
+o/p:-
+enter a stringmadam
+yes it is a palindrome
+
+6)vowels
+Ans)
+l=['a','e','i','o','u','A','E','I','O','U']
+s=input("enter a string")
+c=0
+for i in s:
+    if i in l:
+        c=c+1
+print("numbers of vowels=",c)
+o/p:-
+enter a stringvaishnavi
+numbers of vowels= 4
+
+
+import math
+print("ceil",math.ceil(12.5))
+print("floor",math.floor(12.5))
+print("sqrt",math.sqrt(345))
+print("factorial",math.factorial(3))
+print("power",math.pow(2,3))
+print("remainder",math.fmod(10,3))
+a,b=divmod(10,3)
+print(a,b)'''
+
+o/p:-
+ceil 13
+floor 12
+sqrt 18.57417562100671
+factorial 6
+power 8.0
+remainder 1.0
+3 1

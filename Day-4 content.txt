@@ -1,0 +1,78 @@
+IMPORT RANDOM :-
+import random
+d={random.randint(1,20)}
+print(d)
+o/p:-
+{2}
+
+ZIP :-
+L1=['a','b','c']
+L2=[1,2,3]
+d={a:b for (a,b) in zip (L1,L2)}
+print(d)
+o/p:-
+{'a': 1, 'b': 2, 'c': 3}
+
+STRINGS :-
+n="hi i'am "sylvia""
+syntax error
+n="hi i'am"
+n
+"hi i'am"
+nm="hi i'am'1:15 PM 02-Feb-23
+error
+m="hi i\am"
+m
+"hi i'am"
+
+CONGATE :-
+S1+S2
+
+REPETITION :-
+S1*3
+
+STRING OPERATIONS :-
+s.upper()
+s.lower() or s.casefold()
+s.capitalize()
+s.replace('h','a')
+s.strip()
+s.split()s.split(',')s.split('a')
+s.center(31,'*') s.center(width,fillchar)
+       Will fix total length then fix string in center and fill other empty spaces with fillchar.
+s.count('a')
+s.count('a',5,len(s))-------5-begining and till end of str it will checked
+s.endswith('a',0,len(s))-l check string ends witha or not
+s.find('a'o,len(s))------check a and returns index value of first occurence of
+s.index('a',7,len(s))from 7 to end where a there returns first occurence of that character index
+s.islower() / s.issuper()/ s.istitle() - al words start be
+craps/max((s) - returns greater char be like a>bc...>z
+min(s)--space is lesser than a<b<c.....
+s.startswith('hello',0,len(s))
+s.rfind('a',0,len(s))--- from reverse first occurence or last occurence
+
+MUTABLE AND IMMUTABLE:-
+Mutable - can be changed after creation.In mutable there are :-
+1) List
+2) Set
+3) Dictinaryx=[20,35]
+
+Immutable - can't be changed after creation. In immutable there are :-
+1) Int
+2) Float
+3) String
+4) BOolean
+5) Tuple
+
+EXAMPLES FOR MUTABLE AND IMMUTABLE:-
+
+y={2.9,3.5}
+z=("radha","kumari")
+print(id(x),id(y),id(z))
+x.append(45)
+y.add(4.0)
+z=(z,"IPS")
+print(id(x),id(y),id(z))
+O/P:-
+1504822407488 1504815100000 1504817225664
+1504822407488 1504815100000 1504815855488
