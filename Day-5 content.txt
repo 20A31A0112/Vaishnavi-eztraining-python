@@ -1,0 +1,45 @@
+FUNCTIONS :-
+Classifications:-
+predefined functions
+userdefined functions
+for code reuseability we use functions. Let say we want to use particular concept multiple times in our program. Insteadof writing the same code multiplle times,we can write it ones include
+that inside a function and we can call the function where ever we need it.
+
+TYPES :-
+1)Fuctions without argument without return value
+2)without argument and with return value
+3)with argument and without return value
+4)with argument and with return value
+
+RECURSION METHOD / RECURSIVE FUNCTION :-
+A function which calls itself is called Recursive Function. This concept is called "Recursion".
+Enter number: 7
+0 1 1 2 3 5 8 
+
+
+FIBNOCCI NUMBERS :-
+n=int(input("Enter number: "))
+a=0
+b=1
+sum=0
+count=1
+while (count<=n):
+    print(sum,end=" ")
+    count += 1
+    a = b
+    b = sum
+    sum = a+b
+o/p:-
+15
+
+
+
+VARIABLE LENGTH METHOD :-
+def summ(*a):
+    c=0
+    for i in a:
+        c=c+i
+    print(c)
+summ(1,5,9)
+o/p:-
+15    
