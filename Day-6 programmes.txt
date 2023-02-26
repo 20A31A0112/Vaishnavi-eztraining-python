@@ -1,0 +1,124 @@
+EXCEPTION HANDLING EXAMPLES :-
+
+1)
+a=1000
+b=5
+try:
+    print(a/b)
+#except Exception:#u saying if error there i handle
+#print ("Cant divide any number by zero")
+
+except Exception as e:
+    print("Please note, number cant be divided by zero",e)#this will print error also
+
+#To check your programme execution goes till the end or get stops
+    print ("Bye")
+o/p:-
+200.0
+
+2)
+#Whenever you open a fle make sure you close it
+#file may be anything - programme,data base.....gives clarity
+a=0
+b=10
+try:
+    print("resource open")
+    print(a/b)
+except Exception as e:
+    print("Dont give second no.as zero",e)
+finally: #will get executed if thre is error or not
+    print("Resource closed")
+o/p:-
+resource open
+0.0
+Resource closed
+
+3)
+#Like specialised doctors
+#for those specific errors only those exception
+#blocks will get exected
+a=10
+try:
+    b=int(input("Enter the number"))
+    print("Resource open")
+    print(a/b)
+except ZeroDivisionError as e:
+    print("Please note, number cant be divided by zero",e)
+except ValueError as e:
+    print("Invalid input",e)
+except Exception as e:#if not any above errors
+    print("Other error",e)
+finally:
+    print("Resource closed")
+o/p:-
+Enter the number2
+Resource open
+5.0
+Resource closed
+
+4)
+x=19
+if x%2!=0:
+    raise Exception("X should be even")
+else:
+    print("X is even number....correct")
+o/p:-
+Traceback (most recent call last):
+  File "C:\Users\siva\AppData\Local\Programs\Python\Python311\todayyy 5 programmes.py", line 245, in <module>
+    raise Exception("X should be even")
+Exception: X should be even
+
+OOPS EXAMPLES :-
+1)
+class computer:             #class definition
+    def config(self):       #config is a function
+        print("Yes")
+lenova=computer()           #object1
+lenova.config()
+dell=computer()             #object2
+dell.config()
+o/p:-
+Yes
+Yes
+
+2)Constructor :-
+class Employee:
+    def __init__(self,name,id):
+        self.id=id
+        self.name=name
+    def display(self):
+        print(self.name,self.id)
+emp1 = Employee("John",101)
+emp2 = Employee("David",102)
+emp1.display()
+emp2.display()
+o/p:-
+John 101
+David 102
+
+
+3)
+#Variables and var.access in class and method
+class computer():
+    a=10
+    b=20
+    print("Class variable inside the class",a)
+    def config(self):             #config is a function
+        c=100
+        print("Yes")
+        print("Instance access",self.b)
+lenova=computer()                 #object1
+print(lenova.a)
+print(lenova.a+lenova.b)
+dell=computer()                   #object2
+print("dell",dell.a)
+lenova.config()
+o/p:-
+Class variable inside the class 10
+10
+30
+dell 10
+Yes
+Instance access 20
+
+

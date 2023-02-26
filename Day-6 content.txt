@@ -1,0 +1,31 @@
+
+EXCEPTION HANDLING :-
+When there is an exception, the developer does not want interpution or disturbance in the program flow. To achieve this we are using exception handling.
+
+a=1000
+b=0
+try:
+    print(a/b)
+#except Exception:#u saying if error there i handle
+#print ("Cant divide any number by zero")
+
+except Exception as e:
+    print("Please note, number cant be divided by zero",e)#this will print error also
+
+#To check your programme execution goes till the end or get stops
+    print ("Bye")
+o/p:-
+Please note, number cant be divided by zero division by zero
+Bye
+
+OOPS :-
+It is an efficient concept used in all programming concepts like java and python. For multiple reasons we use oops concept for example code reuseability , data security, hiding data.
+i)Class:-
+its a blue print example birds,laptops.
+ii)Object:-
+Its a thing created based on class.
+
+Note:-
+One class can have multiple objects.
+Example:-Birds is a class, parrot, peacock, dock are objects.
+Example:Class is a laptop, and lenova,hp,dell are objects.
